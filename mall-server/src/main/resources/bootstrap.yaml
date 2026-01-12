@@ -1,0 +1,33 @@
+server:
+  #  max-http-header-size: 4048576
+  #当前服务端口号
+  port: 8080
+spring:
+  config:
+    import:
+      - nacos:application.${spring.cloud.nacos.config.file-extension}?refreshEnabled=true
+      - nacos:${spring.application.name}.${spring.cloud.nacos.config.file-extension}?refreshEnabled=true
+  application:
+    #当前应用名称
+    name: sc-scmall-auth-web
+  cloud:
+    config:
+      enabled: false
+    bootstrap:
+      enabled: true
+    nacos:
+      discovery:
+        server-addr: ${Nacos_Host}
+        namespace: ${Nacos_namespace}
+        username: nacos
+        password: nacos
+      config:
+        server-addr: ${Nacos_Host}
+        file-extension: yml
+        namespace: ${Nacos_namespace}
+        shared-configs:
+          - mysql.yml
+          - redis.yml
+          #- basic.yml
+          #- common.yml
+

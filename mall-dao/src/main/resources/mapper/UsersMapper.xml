@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mall.dao.UsersMapper">
+    <resultMap id="AccUU" type="org.mall.model.dto.AuthAccModel">
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+    <select id="selectByACC" resultMap="AccUU">
+        SELECT * FROM users WHERE username=#{username};
+    </select>
+
+</mapper>

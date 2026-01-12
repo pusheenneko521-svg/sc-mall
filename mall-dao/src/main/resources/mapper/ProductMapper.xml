@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mall.dao.ProductMapper">
+    <resultMap id="product" type="org.mall.model.dto.Product">
+        <result property="pic" column="pic"/>
+        <result property="name" column="name"/>
+        <result property="brandName" column="brand_name"/>
+        <result property="price" column="price"/>
+        <result property="productSn" column="product_sn"/>
+        <result property="publishStatus" column="publish_status"/>
+        <result property="newStatus" column="new_status"/>
+        <result property="sort" column="sort"/>
+        <result property="recommendStatus" column="recommend_status"/>
+        <result property="sale" column="sale"/>
+        <result property="verifyStatus" column="verify_status"/>
+    </resultMap>
+    <select id="productmenu" resultMap="product">
+        SELECT * FROM pms_product where name  like concat('%',#{name},'%');
+    </select>
+
+</mapper>

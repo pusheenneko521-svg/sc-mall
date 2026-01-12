@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mall.dao.RoleDTOMapper">
+    <resultMap id="gl" type="org.mall.model.dto.RoleDTO">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="description" column="description"/>
+        <result property="adminCount" column="adminCount"/>
+        <result property="createTime" column="createTime"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <select id="gl" resultMap="gl">
+        SELECT * FROM roles WHERE id=#{id}
+    </select>
+</mapper>
