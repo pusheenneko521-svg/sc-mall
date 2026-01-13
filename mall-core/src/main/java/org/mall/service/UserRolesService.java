@@ -1,6 +1,6 @@
 package org.mall.service;
 
-import org.mall.model.dto.UserRoles;
+import org.mall.model.entity.UserRoles;
 
 import java.util.List;
 

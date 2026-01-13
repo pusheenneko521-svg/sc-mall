@@ -1,7 +1,7 @@
 package org.mall.service.impl;
 
-import org.mall.model.dto.MenuDTO;
-import org.mall.model.dto.MenuDTOl;
+import org.mall.model.entity.MenuDTO;
+import org.mall.model.entity.MenuDTOl;
 import org.mall.service.MenuService;
 import org.springframework.stereotype.Service;
 import org.mall.dao.MenuDTOMapper;

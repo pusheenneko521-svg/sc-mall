@@ -1,4 +1,4 @@
-package org.mall.model.dto;
+package org.mall.model.entity;
 import lombok.Data;
 @Data
 

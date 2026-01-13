@@ -1,7 +1,7 @@
 package org.mall.dao;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.mall.model.dto.MenuDTO;
+import org.mall.model.entity.MenuDTO;
 
 import java.util.List;
 

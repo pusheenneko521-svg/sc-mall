@@ -1,7 +1,6 @@
 package org.mall.service;
 
-import org.apache.ibatis.annotations.Param;
-import org.mall.model.dto.RoleDTO;
+import org.mall.model.entity.RoleDTO;
 
 import java.util.List;
 

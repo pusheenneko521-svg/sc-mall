@@ -1,7 +1,7 @@
 package org.mall.service.impl;
 
 import org.mall.dao.UserRolesMapper;
-import org.mall.model.dto.UserRoles;
+import org.mall.model.entity.UserRoles;
 import org.mall.service.UserRolesService;
 import org.springframework.stereotype.Service;
 

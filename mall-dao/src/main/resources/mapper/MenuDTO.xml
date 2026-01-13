@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.mall.dao.MenuDTOMapper">
-    <resultMap id="menu" type="org.mall.model.dto.MenuDTO">
+    <resultMap id="menu" type="org.mall.model.entity.MenuDTO">
         <result property="id" column="id"/>
         <result property="title" column="title"/>
         <result property="level" column="level"/>

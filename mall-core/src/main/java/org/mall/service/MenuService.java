@@ -1,6 +1,6 @@
 package org.mall.service;
 
-import org.mall.model.dto.MenuDTOl;
+import org.mall.model.entity.MenuDTOl;
 
 import java.util.List;
 

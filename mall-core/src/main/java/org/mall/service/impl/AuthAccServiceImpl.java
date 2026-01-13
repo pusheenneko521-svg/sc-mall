@@ -1,7 +1,7 @@
 package org.mall.service.impl;
 import org.mall.util.MD5Util;
 import org.mall.dao.UsersMapper;
-import org.mall.model.dto.AuthAccModel;
+import org.mall.model.entity.AuthAccModel;
 import org.mall.service.AuthAccService;
 import org.springframework.stereotype.Service;
 

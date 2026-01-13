@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.mall.dao.ProductMapper">
-    <resultMap id="product" type="org.mall.model.dto.Product">
+    <resultMap id="product" type="org.mall.model.entity.Product">
         <result property="pic" column="pic"/>
         <result property="name" column="name"/>
         <result property="brandName" column="brand_name"/>

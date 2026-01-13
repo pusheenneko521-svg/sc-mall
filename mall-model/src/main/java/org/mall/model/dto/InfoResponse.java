@@ -1,6 +1,7 @@
 package org.mall.model.dto;
 
 import lombok.Data;
+import org.mall.model.entity.MenuDTOl;
 
 import java.util.List;
 

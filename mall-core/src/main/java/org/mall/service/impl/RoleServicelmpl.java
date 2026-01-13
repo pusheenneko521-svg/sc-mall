@@ -1,10 +1,8 @@
 package org.mall.service.impl;
 
-import com.sun.org.apache.bcel.internal.generic.ARETURN;
 import org.mall.dao.RoleDTOMapper;
-import org.mall.model.dto.RoleDTO;
+import org.mall.model.entity.RoleDTO;
 import org.mall.service.RoleService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
